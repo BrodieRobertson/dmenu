@@ -782,7 +782,7 @@ main(int argc, char *argv[])
 			fstrncmp = strncasecmp;
 			fstrstr = cistrstr;
 		} else if (!strcmp(argv[i], "-n")) /* instant select only match */
-			instant = 1;
+			instant = 0;
 		else if (i + 1 == argc)
 			usage();
 		/* these options take one argument */
